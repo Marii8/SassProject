@@ -1,8 +1,6 @@
-@import //他のscssを入れる
+@import "foundation/_reset";
+@import "foundation/_color";
 
 
-
-$titleColor: #fff;
-$textColor: #777;
-
+@import "layout/_header";
 
