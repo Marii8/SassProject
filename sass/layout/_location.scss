@@ -1,9 +1,39 @@
 
 .location {
 	text-align: center;
+	padding: 50px;
+	color: $textColor;
+	h3 {
+		font-size: 30px;
+	}
+	p {
+		font-size: 20px;
+		margin: 10px 0;
+	}
 }
+
+
 
 .access {
 	display: flex;
 	justify-content: center;
+	margin-top: 30px;
+}
+
+.info {
+	text-align: left;
+	margin-top: 15px;
+	.time {
+		font-size: 15px;
+	}
+	p {
+		font-size: 15px;
+		margin-left: 50px;
+
+	}
+}
+
+
+#map {
+	margin: 15px;
 }
