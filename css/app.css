@@ -35,7 +35,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-<<<<<<< HEAD
 footer {
   height: 200px;
   background-color: #000; }
@@ -53,10 +52,6 @@ footer {
   margin-top: 90px;
   margin-right: 100px; }
 
-/* $titleColor: #fff;
-$textColor: #777;
- */
-=======
 header {
   color: #777;
   padding: 25px; }
@@ -104,4 +99,10 @@ header {
     color: #777; }
   .concept .second-container p {
     color: #777; }
->>>>>>> master
+
+.location {
+  text-align: center; }
+
+.access {
+  display: flex;
+  justify-content: center; }
