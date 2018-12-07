@@ -35,6 +35,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+<<<<<<< HEAD
 footer {
   height: 200px;
   background-color: #000; }
@@ -55,3 +56,52 @@ footer {
 /* $titleColor: #fff;
 $textColor: #777;
  */
+=======
+header {
+  color: #777;
+  padding: 25px; }
+
+.header-container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between; }
+
+.header-right {
+  display: flex;
+  font-size: 16px; }
+  .header-right > li:last-child {
+    margin-right: 0; }
+  .header-right > li > a {
+    text-decoration: none;
+    color: #777;
+    cursor: pointer;
+    padding: 25px 15px; }
+    .header-right > li > a:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #fff; }
+
+.top-img {
+  width: 100vw;
+  height: 700px;
+  background-image: url(../img/top-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.top-title {
+  color: #fff;
+  font-size: 35px; }
+
+.concept {
+  width: 100vw;
+  height: 500px;
+  background-color: #fff;
+  padding: 100px; }
+  .concept .second-container .second-title {
+    color: #777; }
+  .concept .second-container p {
+    color: #777; }
+>>>>>>> master
