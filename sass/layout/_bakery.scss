@@ -1,0 +1,16 @@
+.bakery {
+    width: 100vw;
+    height: 500px;
+    background: {
+        image: url(../img/concept-bg.jpg);
+        size: cover;
+        repeat: no-repeat;
+        attachment: fixed;
+    }
+    padding: 25px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
