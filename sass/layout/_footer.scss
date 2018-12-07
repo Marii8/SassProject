@@ -1,0 +1,24 @@
+
+footer {
+	height: 200px;
+	background-color: #000;
+}
+
+.facebook {
+	margin-top: 75px;
+	margin-left: 100px;
+	color: #fff;
+	&:hover {
+		color: #0612FF;
+	}
+}
+
+
+$titleColor: #fff;
+.lorem {
+	color: $titleColor;
+	float: right;
+	margin-top: 90px;
+	margin-right: 100px;
+
+}
