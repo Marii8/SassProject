@@ -4,9 +4,9 @@ header {
 }
 
 .header-container {
-    width: 100vw;
     display: flex;
     justify-content: space-between;
+    padding: 0 25px;
 }
 
 .header-right{
@@ -47,5 +47,6 @@ header {
 .top-title {
     color: $titleColor;
     font-size: 35px;
-
+    padding: 25px;
+    background-color: rgba(#000, 0.6);
 }

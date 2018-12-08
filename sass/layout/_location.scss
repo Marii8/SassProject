@@ -1,20 +1,14 @@
-.bakery {
+.contact {
     height: 500px;
     background: {
-        image: url(../img/concept-bg.jpg);
+        image: url(../img/location-bg.jpg);
         size: cover;
         repeat: no-repeat;
         attachment: fixed;
     }
     padding: 25px;
 
-
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.bread-image {
-    width: 200px;
-    height: 200px;
 }
