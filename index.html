@@ -7,38 +7,50 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+<div id="scrollcheck"><a href="#header"><i class="fas fa-arrow-up"></i></a></div>
 
-    <header>
+
+    <header id="header">
         <div class="header-container">
-            <p>Bakery</p>
+            <p><a href="index.html">Bakery</a></p>
             <ul class="header-right">
-                <li><a href="#">Concept</a></li>
-                <li><a href="#">Bakery</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#concept">Concept</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
 
 	<!-- First img -->
     <div class="top-img">
-        <h2 class="top-title"><span>SolLaSoDo</span><span>Bakary</span></h2>
+        <div class="top-container">
+            <h2 class="top-title"><a href="#"><span>SolLaSoDo</span><span>Bakary</span></a></h2>
+
+            <div class="editors-page">
+                <h2>editors' selection</h2>
+                <ul>
+                    <li><a href="yuki.html">Yuki's</a></li>
+                    <li><a href="mariko.html">Mari"s</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 	<!-- コンセプト -->
-    <div class="concept">
+    <div class="concept" id="concept">
         <div class="second-container">
         <h1 class="second-title">CONCEPT</h1>
-           <p>オリジナル製粉の小麦粉。特別に製造された高品質のバター──。<br>メゾンカイザーは厳選した素材を使い、天然酵母を用いたフランスの伝統的な製法で、毎日おいしいパンを焼いています。<br>そして私たちは、ただパンを売るだけでなく、お客様とのコミュニケーションも大切にしています。<br><br>今晩のお料理に合わせたハードパンの提案。お客様からバゲットのおいしい食べ方を教えていただく。パンを介したお客様とメゾンカイザースタッフとのコミュニケーションによって、食卓に溢れるおいしさと笑顔。それがメゾンカイザーの考える「パンのある幸せな食卓」です。<br><br>メゾンカイザーはパン作りを通して、パンから生まれる新しい生活スタイルを提案していきます。<br><br>株式会社 ブーランジェリーエリックカイザージャポン<br>代表取締役　木村 周一郎　　取締役　エリック・カイザー</p>
-        <div class="profile">
-            <img src="" alt="">
-        </div>
 
+           <div><p>オリジナル製粉の小麦粉。特別に製造された高品質のバター──。<br>メゾンカイザーは厳選した素材を使い、天然酵母を用いたフランスの伝統的な製法で、毎日おいしいパンを焼いています。<br>そして私たちは、ただパンを売るだけでなく、お客様とのコミュニケーションも大切にしています。<br><br>今晩のお料理に合わせたハードパンの提案。お客様からバゲットのおいしい食べ方を教えていただく。パンを介したお客様とメゾンカイザースタッフとのコミュニケーションによって、食卓に溢れるおいしさと笑顔。それがメゾンカイザーの考える「パンのある幸せな食卓」です。<br><br>メゾンカイザーはパン作りを通して、パンから生まれる新しい生活スタイルを提案していきます。<br><br>
+            </div>
+            <div class="concept-profile"></div>
+            <div class="name">株式会社 ブーランジェリーエリックカイザージャポン<br>代表取締役　木村 周一郎　　取締役　エリック・カイザー</div></p>
         </div>
     </div>
 
     <!-- bakery　タイトルのみ-->
     <div class="bakery">
-        <h1 class="bakery-title">PRODUCTS</h1>
+        <h1 class="bakery-title" id="product">PRODUCTS</h1>
     </div>
 
     <!-- content パンの画像を入れる-->
@@ -48,7 +60,7 @@
     </div>
 
 	<!-- contact　タイトルのみ -->
-	<div class="contact">
+	<div class="contact" id="contact">
      <h1 class="contac-title">Contact Us</h1>
     </div>
 

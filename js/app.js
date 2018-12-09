@@ -51,7 +51,48 @@ $(function(){
     //     filter.toggle('filter');
     // });
 
+    $('#scrollcheck').hide();
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 100){
+            $('#scrollcheck').fadeIn();
+        } else {
+            $('#scrollcheck').fadeOut();
+        }
+    }); //
 
 
 
- });
+
+ }); //jQuery おまじない閉じタグ
+
+// _mariko.html
+$(function () {
+    let h = 500;
+    // let h = $(window).height(); 
+    // ウィンドウの高さを取得
+    let spead = 500; // フェードインスピード
+    $('.contents').each(function () {
+        $(this).css({
+            height: h
+        });
+    });
+    $(window).on('scroll', function () {
+        let scrollpx = $(this).scrollTop(); //スクロール量観測
+            console.log(scrollpx);
+        $('.fadeDone').each(function () { //eachメソッドについてhttps://www.sejuku.net/blog/33609
+            let thisTop = $(this).offset().top; //コンテンツの高さ
+            console.log(thisTop);
+            let thisShow = thisTop - h ; //出現位置
+            console.log(thisShow);
+            if (scrollpx >= thisShow) {
+                $(this).stop().animate({
+                    opacity: 1
+                }, spead);
+            } else {
+                $(this).stop().animate({
+                    opacity: 0.3
+                }, spead);
+            }
+        });
+    });
+});

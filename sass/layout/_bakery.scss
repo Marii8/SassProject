@@ -1,24 +1,23 @@
 .bakery {
-    height: 500px;
+    @include titleStyle;
     background: {
         image: url(../img/concept-bg.jpg);
         size: cover;
         repeat: no-repeat;
         attachment: fixed;
-        }
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    }
 }
 
 .content {
     padding: 30px;
+
 }
 
 .bread-list {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 auto;
     li {
         width: 200px;
         height: 200px;

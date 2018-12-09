@@ -1,5 +1,5 @@
 .concept {
-    height: 500px;
+    height: 700px;
     box-sizing: border-box;
     background-color: #fff;
     padding: 100px;
@@ -8,10 +8,29 @@
         .second-title {
             color: $textColor;
         }
-        p {
+
+        p, .name {
             color: $textColor;
         }
+
+        .name {
+            text-align: right;
+        }
+
     }
 
+
+        .concept-profile {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: {
+                image: url(../img/company2.jpg);
+                size: cover;
+                repeat: no-repeat;
+                position: 50% 50%;
+            }
+    }
 }
 

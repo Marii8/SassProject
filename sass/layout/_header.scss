@@ -3,10 +3,16 @@ header {
     padding: 25px;
 }
 
+
+
 .header-container {
     display: flex;
     justify-content: space-between;
     padding: 0 25px;
+    p a{
+        color: $textColor;
+        text-decoration: none;
+    }
 }
 
 .header-right{
@@ -30,23 +36,58 @@ header {
     }
 }
 
+.top-container {
+    display: flex;
+    flex-direction: column;
+    .editors-page {
+        h2 {
+            font-size: 20px;
+            text-align: center;
+            margin: 30px;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 10px;
+            li a {
+                text-decoration: none;
+                font-size: 25px;
+                color: $titleColor;
+                background-color: rgba(#000, 0.6);
+                padding: 15px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+}
+
+
+
 .top-img {
-    width: 100vw;
-    height: 700px;
+    @include titleStyle(700px);
     background: {
         image: url(../img/top-img.jpg);
         size: cover;
         repeat: no-repeat;
         attachment: fixed;
     }
-    display: flex;
-    justify-content: center;
-    align-items:  center;
 }
 
 .top-title {
-    color: $titleColor;
     font-size: 35px;
     padding: 25px;
     background-color: rgba(#000, 0.6);
+    a {
+        color: $titleColor;
+        text-decoration: none;
+    }
 }
+
+.second-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+

@@ -1,14 +1,9 @@
 .contact {
-    height: 500px;
+    @include titleStyle;
     background: {
         image: url(../img/location-bg.jpg);
         size: cover;
         repeat: no-repeat;
         attachment: fixed;
     }
-    padding: 25px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
