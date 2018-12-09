@@ -5,10 +5,8 @@
         size: cover;
         repeat: no-repeat;
         attachment: fixed;
-    }
+        }
     padding: 25px;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,21 +22,20 @@
     li {
         width: 200px;
         height: 200px;
-        margin: 0;
-        padding: 0;
         overflow: hidden;
-        border: solid 30px #000;
-        box-sizing: border-box;
     }
 }
 
 
 
+
 // 画像を表示させた時の画像のスタイル
-.bread-image li img{
+.bread-image {
+    width: 200px;
+    height: 200px;
     -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-transform: transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
     &:hover {
         cursor: pointer;
@@ -46,6 +43,7 @@
         transform: scale(1.2);
     }
 }
+
 
 .bread-list li {
     position: relative;

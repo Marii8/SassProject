@@ -17,9 +17,9 @@ $(function(){
         "../img/pastry/petitebrioche.jpg",
         "../img/pastry/batarl.jpg",
         "../img/pastry/paind'assas.jpg",
-        "../img/pastry/croquemousieur.jpg",
-        "../img/pastry/bagettemonge.jpg",
-        "../img/pastry/paincomplet.jpg",
+        // "../img/pastry/croquemousieur.jpg",
+        // "../img/pastry/bagettemonge.jpg",
+        // "../img/pastry/paincomplet.jpg",
     ];
 
     let list = window.$('#js-bread-list');
@@ -51,16 +51,6 @@ $(function(){
     //     filter.toggle('filter');
     // });
 
-    $('#breadImg0').on('mouseover', function(e) { //マウスカーソルが入った時の処理
-            console.log('hovered!!');
-            console.log(this);
-        e.preventDefault();
-        filter = $('<div>');
-        filter.addClass('filter');
-            console.log(filter);
-            console.log(list);
-    $('#breadImg0').parent().append(filter);
-    });
 
 
 
