@@ -21,19 +21,29 @@
 .bread-list {
     display: flex;
     flex-flow: row wrap;
+    li {
+        width: 200px;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: solid 30px #000;
+        box-sizing: border-box;
+    }
 }
 
 
 
-
 // 画像を表示させた時の画像のスタイル
-.bread-image {
-    width: 200px;
-    height: 200px;
-    // -webkit-filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, .8));
-    // filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, .8));
+.bread-image li img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
     &:hover {
         cursor: pointer;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
     }
 }
 
