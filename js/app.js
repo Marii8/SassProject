@@ -2,7 +2,7 @@ $(function(){
 
 // pastryの画像を配列に入れて、その数だけダグに入れて表示させる-----
     let arry = [
-        "../img/croquemonsieur.jpg",
+        "../img/pastry/croquemonsieur.jpg",
         "../img/pastry/quicheepinardstruitesaumonee.jpg",
         "../img/pastry/plieauchocolat.jpg",
         "../img/pastry/painaufromage.jpg",
