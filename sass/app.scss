@@ -3,6 +3,8 @@
 @import "foundation/_reset";//他のscssを入れる
 @import "layout/_footer";//他のscssを入れる
 @import "foundation/_color";
+@import "foundation/_yuki";
+
 
 //layout
 @import "layout/_header";
@@ -24,3 +26,4 @@
 
 @import "foundation/_marikos";
 @import "layout/_location";
+
