@@ -2,24 +2,32 @@
 footer {
 	height: 200px;
 	background-color: #000;
+	display: flex;
 }
 
-.facebook {
-	margin-top: 75px;
+
+.footer-left {
+	margin-top: 70px;
 	margin-left: 100px;
+	.wafel {
 	color: #fff;
-	&:hover {
-		color: #0612FF;
+		&:hover {
+			color: #FFE094;
+		}
+	}
+	.cookie {
+		color: #fff;
+		&:hover {
+			color: #A87106
+		}
 	}
 }
 
 
-
 $titleColor: #fff;
-.lorem {
+.footer-right {
 	color: $titleColor;
-	float: right;
 	margin-top: 90px;
-	margin-right: 100px;
+	margin-left: 20px;
 
 }
