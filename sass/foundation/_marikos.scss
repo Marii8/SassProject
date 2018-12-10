@@ -1,7 +1,7 @@
 // body {
 //   margin:0;
 //   padding:0;
-//   min-height: 100%;
+//   min-c: 100%;
 //   width: 100%;
 //   background-color: #28153F;
 // }
@@ -9,6 +9,7 @@
 .contents {
   color: #fff;
   display: table;
+  line-height: 24px
 }
 
 .shop-bg {
@@ -20,40 +21,77 @@
 }
 
 .tips {
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: $titleSize
+  @include titleText;
+  @include titleStyle;
+}
+
+
+.explanation-wrapper li:nth-child(odd) {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80px 330px;
+  grid-template-areas: "title title"
+                       "picture paragraph";
+}
+.explanation-wrapper li:nth-child(even) {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80px 330px;
+  grid-template-areas: "title title"
+                       "paragraph picture";
 }
 
 .contents {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-}
-
-.ex-container {
-  display: grid;
-  grid-template:
-  "picture explanation" 1fr/
-  500px 1fr;
-
+  h3 {
+    @include titleText;
+    grid-area: title;
+    line-height: 80px;
+  }
   .picture {
-    grid-area: picture;
-    img {
+    grid-area: 'picutre';
+    margin: 0 auto;
+  }
+  .explanation {
+    grid-area: 'paragraph';
+    padding-right: 30px;
+  }
+
+ .insert1 {
       width: 250px;
       height: 250px;
-    }
+      background: {
+        image: url(../img/howtomake.jpg);
+        size: cover;
+      };
   }
 
-  .explanation {
-    grid-area: explanation;
-
+  .insert2 {
+    @extend .insert1;
+      background: {
+        image: url(../img/levainliquid.jpg);
+        size: cover;
+      };
   }
+
+  .insert3 {
+    @extend .insert1;
+      background: {
+        image: url(../img/buter.jpg);
+        size: cover;
+      };
 }
+
+
+.insert4 {
+  @extend .insert1;
+    background: {
+      image: url(../img/flour.jpg);
+      size: cover;
+    };
+}
+
+}
+
 
 
 .contents > * {
@@ -65,17 +103,17 @@
     opacity: 0;
 }
 #contents1 {
-  background-color: #28153F;
+  background-color: #F0F7F7FF;
 }
 #contents2 {
-  background-color: #FC2D79;
+  background-color: #DDD3A7FF;
 }
 #contents3 {
-  background-color: #FCB635;
+  background-color: #C48638FF;
 }
 #contents4 {
-  background-color: #FCBf;
+  background-color: #E99651FF;
 }
 #contents5 {
-  background-color: #F42;
+  background-color: #592E11FF;
 }

@@ -28,3 +28,10 @@ $titleSize: 30px;
     text-align: center;
     line-height: 50px
 }
+
+@mixin titleText{
+    font: {
+        family: 'Sawarabi Mincho', sans-serif;
+        size: 18px;
+    }
+}

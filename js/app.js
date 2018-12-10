@@ -2,7 +2,7 @@ $(function(){
 
 // pastryの画像を配列に入れて、その数だけダグに入れて表示させる-----
     let arry = [
-        "../img/pastry/croquemonsieur.jpg",
+        "../img/croquemonsieur.jpg",
         "../img/pastry/quicheepinardstruitesaumonee.jpg",
         "../img/pastry/plieauchocolat.jpg",
         "../img/pastry/painaufromage.jpg",
@@ -67,8 +67,7 @@ $(function(){
 
 // _mariko.html
 $(function () {
-    let h = 500;
-    // let h = $(window).height(); 
+    let h = 400; 
     // ウィンドウの高さを取得
     let spead = 500; // フェードインスピード
     $('.contents').each(function () {
