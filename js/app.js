@@ -28,11 +28,16 @@ $(function(){
     let i;
 
     for(i = 0; i < arry.length; i++) {
-        breadImg = $('<li>')
+        breadImg = $('<li>');
             breadImg.html(`<img src="${arry[i]}" alt="breadImg[${i}]" class="bread-image" id="breadImg${i}" />`);
+        // filter = $('<div>');
+        // filter.addClass('filter').attr('style', ' display: none');
+        // breadImg.append(filter);
         list.append(breadImg);
     };
 //_bakery.scss pastryの画像表示 ここまで
+
+
 
 
 
@@ -94,4 +99,8 @@ $(function () {
             }
         });
     });
+
+
+
+
 });
