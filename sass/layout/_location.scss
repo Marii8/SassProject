@@ -1,4 +1,14 @@
 
+.contact {
+    @include titleStyle;
+    background: {
+        image: url(../img/location-bg.jpg);
+        size: cover;
+        repeat: no-repeat;
+        attachment: fixed;
+    }
+}
+
 .location {
 	text-align: center;
 	padding: 50px;

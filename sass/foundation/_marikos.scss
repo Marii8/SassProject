@@ -1,0 +1,119 @@
+// body {
+//   margin:0;
+//   padding:0;
+//   min-c: 100%;
+//   width: 100%;
+//   background-color: #28153F;
+// }
+
+.contents {
+  color: #fff;
+  display: table;
+  line-height: 24px
+}
+
+.shop-bg {
+  background: {
+    image: url(../img/company2.jpg);
+    repeat: no-repeat;
+    size: cover;
+  }
+}
+
+.tips {
+  @include titleText;
+  @include titleStyle;
+}
+
+
+.explanation-wrapper li:nth-child(odd) {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80px 330px;
+  grid-template-areas: "title title"
+                       "picture paragraph";
+}
+.explanation-wrapper li:nth-child(even) {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80px 330px;
+  grid-template-areas: "title title"
+                       "paragraph picture";
+}
+
+.contents {
+  h3 {
+    @include titleText;
+    grid-area: title;
+    line-height: 80px;
+  }
+  .picture {
+    grid-area: 'picutre';
+    margin: 0 auto;
+  }
+  .explanation {
+    grid-area: 'paragraph';
+    padding-right: 30px;
+  }
+
+ .insert1 {
+      width: 250px;
+      height: 250px;
+      background: {
+        image: url(../img/howtomake.jpg);
+        size: cover;
+      };
+  }
+
+  .insert2 {
+    @extend .insert1;
+      background: {
+        image: url(../img/levainliquid.jpg);
+        size: cover;
+      };
+  }
+
+  .insert3 {
+    @extend .insert1;
+      background: {
+        image: url(../img/buter.jpg);
+        size: cover;
+      };
+}
+
+
+.insert4 {
+  @extend .insert1;
+    background: {
+      image: url(../img/flour.jpg);
+      size: cover;
+    };
+}
+
+}
+
+
+
+.contents > * {
+  display:table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.fadeDone {
+    opacity: 0;
+}
+#contents1 {
+  background-color: #F0F7F7FF;
+}
+#contents2 {
+  background-color: #DDD3A7FF;
+}
+#contents3 {
+  background-color: #C48638FF;
+}
+#contents4 {
+  background-color: #E99651FF;
+}
+#contents5 {
+  background-color: #592E11FF;
+}
